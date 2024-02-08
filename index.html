@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle-Calédonie</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" >
+        <ul class="navbar-content" id="myNavbar">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#photos">Galerie</a></li>
+            <li><a href="#contacts">Contacts</a></li>    
+        </ul>
+    </nav>
+
+    <!-- Jumbotron -->
+    <section class="jumbotron container" id="accueil">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 50px; text-align: center; color: #fff;"">
+        <div style="font-size: 39px;"">
+            <p style="padding: 121px; font-size: 58px;">
+                Bienvenue sur notre site dédié au tourisme en Nouvelle-Calédonie !</p>
+            <button class="btn">Découvrir</button>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- Main -->
+    <section class="main container" id="photos">
+        <div class="content">
+            <h1 style="text-align: center; padding-top: 69px;">Galerie</h1>
+            <div class="galeries" style="display: flex; justify-content: space-evenly; align-items: center; padding-top: 39px;">
+                <div class="gallery" >
+                    <a target="_blank" href="src/img1.jpg">
+                      <img src="src/img1.jpg" alt="Forest">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+                <div class="">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UWquJFQQw6A?si=Ph-hzQDt9AW8ADwN&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+                <div class="gallery">
+                    <a target="_blank" href="src/img3.jpg">
+                      <img src="src/img3.jpg" alt="Forest" >
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="contact container" id="contacts">
+        <div class="content">
+            <h1 style="text-align: center; padding-top: 69px;">Contacts</h1>
+            <div>
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>
