@@ -27,14 +27,14 @@ h1 {
 
 label, input, select {
     display: block;
-    margin-bottom: 15px; /* Ajustez la valeur selon vos besoins */
+    margin-bottom: 39px;
+    font-size: 50px;
 }
 
 .container {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
 }
 
 /*navbar style*/
@@ -98,6 +98,11 @@ div.gallery {
     cursor: pointer;
    }
 
+
+   .p-jumbotron {
+    padding: 121px; font-size: 58px;
+   }
+
 /* main style */
 
 .main .content {
@@ -136,8 +141,55 @@ form input {
     background-color: #FFFFFF;
     color: #000000;
     border-style: solid;
-    border-radius: 0px;
+    border-radius: 20px;
     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
     text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    height: 39px;
 }
 
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+  /* Footer */
+
+  footer {
+    width: 100%;
+    height: 50px;
+    background-color: #2D2D2D;
+    color: white;
+    text-align: center;
+  }
+
+/* Responsive */
+
+@media screen and (max-width: 1300px) {
+    .navbar-content {
+        flex-direction: column;
+        font-size: 63px;
+    }
+}
+
+@media screen and (max-width: 903px) {
+    .galeries {
+        flex-direction: column;
+    }
+
+@media screen and (max-width: 603px) {
+    .none {
+        display: none;
+    }
+
+    .p-jumbotron {
+        padding: 60px; font-size: 42px;
+    }
+}
+}

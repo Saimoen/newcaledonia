@@ -17,16 +17,16 @@
     </nav>
 
     <!-- Jumbotron -->
-    <section class="jumbotron container" id="accueil">
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 50px; text-align: center; color: #fff;"">
-        <div style="font-size: 39px;"">
-            <p style="padding: 121px; font-size: 58px;">
+    <div class="jumbotron container" id="accueil" style="min-height: 100vh;">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 50px; text-align: center; color: #fff;">
+        <div style="font-size: 39px;">
+            <p class="p-jumbotron">
                 Bienvenue sur notre site dédié au tourisme en Nouvelle-Calédonie !</p>
             <button class="btn">Découvrir</button>
         </div>
 
     </div>
-    </section>
+    </div>
 
     <!-- Main -->
     <section class="main container" id="photos">
@@ -35,19 +35,19 @@
             <div class="galeries" style="display: flex; justify-content: space-evenly; align-items: center; padding-top: 39px;">
                 <div class="gallery" >
                     <a target="_blank" href="src/img1.jpg">
-                      <img src="src/img1.jpg" alt="Forest">
+                      <img src="src/img1.jpg" alt="Image couché de soleil">
                     </a>
-                    <div class="desc">Add a description of the image here</div>
+                    <div class="desc">Les derniers instants de la journée se dévoilent dans une explosion de couleurs célestes, peignant le ciel d'une palette éblouissante. Le soleil, tel un artiste accompli, s'éclipse derrière l'horizon, laissant derrière lui un sillage de nuances chaudes et apaisantes.</div>
                 </div>
                 <div class="">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UWquJFQQw6A?si=Ph-hzQDt9AW8ADwN&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <div class="desc">Add a description of the image here</div>
+                    <iframe class="none" width="560" height="315" src="https://www.youtube.com/embed/UWquJFQQw6A?si=Ph-hzQDt9AW8ADwN&autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="desc none">La vidéo s'ouvre sur un paysage éblouissant de la Nouvelle-Calédonie, révélant <br> un paradis tropical préservé.</div>
                 </div>
                 <div class="gallery">
                     <a target="_blank" href="src/img3.jpg">
-                      <img src="src/img3.jpg" alt="Forest" >
+                      <img src="src/img3.jpg" alt="Image de " >
                     </a>
-                    <div class="desc">Add a description of the image here</div>
+                    <div class="desc">Le ponton de la plage du Méridien s'étire gracieusement dans les eaux cristallines du Pacifique, offrant une passerelle vers l'émerveillement au cœur de la Nouvelle-Calédonie. </div>
                 </div>
             </div>
         </div>
@@ -58,25 +58,25 @@
         <div class="content">
             <h1 style="text-align: center; padding-top: 69px;">Contacts</h1>
             <div>
-                <form action="/action_page.php">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <form action="#accueil" method="post">
+                    <label for="fname">Prénom</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Votre prénom...">
               
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="lname">Nom</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Votre nom..">
               
-                  <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
+                  <label for="textarea">Message</label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
                 
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="Envoyer">
                 </form>
               </div>
         </div>
     </section>
+
+    <footer>
+        <p>Créé par <a href="https://saimoen.netlify.app/">Grégory Saimoen</a> - 2024 ©</p>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>
